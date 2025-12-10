@@ -23,7 +23,7 @@ function App() {
         aria-labelledby="modal-modal-title"
         aria-describedby="modal-modal-description"
       >
-        <div className="modal-content">
+        <div className="modal-content" onClick={(e) => e.stopPropagation()}>
           <Form open={open} setOpen={setOpen} />
         </div>
       </Modal>
