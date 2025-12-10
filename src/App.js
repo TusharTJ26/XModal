@@ -6,6 +6,7 @@ import Modal from "@mui/material/Modal";
 
 function App() {
   const [open, setOpen] = useState(false);
+  // console.log(open);
   const openForm = () => {
     setOpen(true);
   };
