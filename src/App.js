@@ -28,6 +28,7 @@ function App() {
           className="modal"
           // className="modal-content"
         >
+          <div className="modal-content"></div>
           <Form open={open} setOpen={setOpen} />
         </div>
       </Modal>
