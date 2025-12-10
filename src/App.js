@@ -17,13 +17,17 @@ function App() {
         Open Form
       </button>
       <Modal
-        className="modal"
+        className="modal-container"
+        // className="modal"
         open={open}
         onClose={() => setOpen(false)}
         aria-labelledby="modal-modal-title"
         aria-describedby="modal-modal-description"
       >
-        <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+        <div
+          className="modal"
+          // className="modal-content"
+        >
           <Form open={open} setOpen={setOpen} />
         </div>
       </Modal>
