@@ -23,12 +23,14 @@ function App() {
         onClose={() => setOpen(false)}
         aria-labelledby="modal-modal-title"
         aria-describedby="modal-modal-description"
+        disablePortal
+        container={document.getElementById("root")}
       >
         <div
           className="modal"
           // className="modal-content"
         >
-          <div className="modal-content">
+          <div className="modal-content" onClick={(e) => e.stopPropagation()}>
             <Form open={open} setOpen={setOpen} />
           </div>
         </div>
